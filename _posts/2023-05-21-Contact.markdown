@@ -1,1 +1,13 @@
+---
+layout: post
+title:  "Contact"
+date:   2023-05-21 02:41:03 +0900
+---
 
+e-mail (Uni) : wlswn1204@g.skku.edu
+
+e-mail (personal) : dongju12724@daum.net
+
+github link : github.com/moony1204
+
+Reach out if you want.
