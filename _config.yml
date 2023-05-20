@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Personal blog of Dong Ju Kim
-email: wlswn1204@g.skku.com
+email: wlswn1204@g.skku.edu
 description: >- # this means to ignore newlines until "baseurl:"
   This is a personal blog made for the 11th week assignment.
   there are a few things i have to include in this.
