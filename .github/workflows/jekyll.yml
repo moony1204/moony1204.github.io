@@ -6,24 +6,32 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  checkout-Repository:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3.5.2
-  
+  setup-ruby:
+    runs-on: ubuntu-latest
+    
+    steps:
       - name: Setup Ruby, JRuby and TruffleRuby
         uses: ruby/setup-ruby@v1.150.0
         with:
            ruby-version: '3.0'
            
-      - name: Scheduled Milestones
+  Scheduled-milestones:
+      runs-on: ubuntu-latest
+      needs: checkout-Repository
+      
+      steps:
+         - name: Scheduled Milestones
   # uses: readmeio/scheduled-milestones@0e87deaf0083675156111def24b8a29a97aa6fb1
-        uses: readmeio/scheduled-milestones@v1.0.0
-        with:
-           token: ${{ secrets.GITHUB_TOKEN }}
-           title: "Dong Ju's Scheduled Milstones"
-           days: "1,2,3,4,5"
+           uses: readmeio/scheduled-milestones@v1.0.0
+           with:
+              token: ${{ secrets.GITHUB_TOKEN }}
+              title: "Dong Ju's Scheduled Milstones"
+              days: "1,2,3,4,5"
            
 
