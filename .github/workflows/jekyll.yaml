@@ -17,9 +17,3 @@ jobs:
       - uses: actions/setup-ruby@v1
       - with:
           ruby-version: 2.7
-
-      - name: Build and Deploy
-      - uses: jekyll/jekyll-action@v0.12.0
-      - with:
-          jekyll_version: 4
-          build_options: --trace # Optional: Add additional build options if needed
