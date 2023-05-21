@@ -16,7 +16,7 @@ jobs:
       - name: Set up Ruby
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: 2.7
+          ruby-version: '3.0'
            
       - name: Scheduled Milestones
   # uses: readmeio/scheduled-milestones@0e87deaf0083675156111def24b8a29a97aa6fb1
