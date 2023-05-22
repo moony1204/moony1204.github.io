@@ -33,5 +33,9 @@ jobs:
             token: ${{ secrets.GITHUB_TOKEN }}
             title: "Dong Ju's Scheduled Milstones"
             days: "1,2,3,4,5"
+            date_options: '{"month": "long", "day": "numeric"}'
+            
+       - name: Created Milestones
+         run : echo ${{ steps.scheduled.outputs.milestones }}
            
 
